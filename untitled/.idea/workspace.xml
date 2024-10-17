@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4dff6137-b5ec-43ea-9512-b95b62d7feb4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Calculadora_MAVEN/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_MAVEN/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_MAVEN/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_MAVEN/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_MAVEN/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_MAVEN/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_MAVEN/.mvn/jvm.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_MAVEN/.mvn/maven.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_MAVEN/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_MAVEN/src/main/java/dsa/example/tdd/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_MAVEN/src/test/java/dsa/example/tdd/CalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestMaven/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_Per_Practicar_Minim1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_Per_Practicar_Minim1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_Per_Practicar_Minim1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_Per_Practicar_Minim1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_Per_Practicar_Minim1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_Per_Practicar_Minim1/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_Per_Practicar_Minim1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_Per_Practicar_Minim1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_Per_Practicar_Minim1/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_Per_Practicar_Minim1/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_Per_Practicar_Minim1/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_Per_Practicar_Minim1/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_Per_Practicar_Minim1/src/main/java/org/example/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tdd-example/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tdd-example/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tdd-example/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tdd-example/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tdd-example/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tdd-example/.mvn/jvm.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tdd-example/.mvn/maven.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tdd-example/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tdd-example/src/main/java/dsa/example/tdd/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tdd-example/src/test/java/dsa/example/tdd/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2n6UMxpRYDaI4TtxCDEZtpdK1Dr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/marce/Desktop/DSA_10-10-2024"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4dff6137-b5ec-43ea-9512-b95b62d7feb4" name="Changes" comment="" />
+      <created>1728292975113</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728292975113</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -42,4 +42,7 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation("com.squareup.retrofit2:retrofit:2.11.0")
     implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+    implementation ("com.android.support:recyclerview-v7:25.3.1")
+    implementation ("androidx.appcompat:appcompat:1.6.0")
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
 }

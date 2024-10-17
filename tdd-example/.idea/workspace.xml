@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="82bf813d-7a44-49b8-a5f2-dbec91c66bc4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Calculadora_MAVEN/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_MAVEN/.mvn/jvm.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_MAVEN/.mvn/maven.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_MAVEN/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_MAVEN/src/main/java/dsa/example/tdd/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculadora_MAVEN/src/test/java/dsa/example/tdd/CalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_Per_Practicar_Minim1/src/main/java/org/example/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/jvm.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/maven.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dsa/example/tdd/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dsa/example/tdd/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/src/main/java/org/example/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/src/test/java/org/example/AppTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2n6UmCNNP47HeELBURkML42LyAG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82bf813d-7a44-49b8-a5f2-dbec91c66bc4" name="Changes" comment="" />
+      <created>1728293175420</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728293175420</updated>
+    </task>
+    <servers />
+  </component>
+</project>

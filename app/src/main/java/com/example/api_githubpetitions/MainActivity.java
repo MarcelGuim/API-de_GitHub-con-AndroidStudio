@@ -1,5 +1,6 @@
 package com.example.api_githubpetitions;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -8,78 +9,140 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-import retrofit2.http.GET;
-import retrofit2.http.Path;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Parcelable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    TextView input;
     TextView output;
     Button btn;
-    GitHubService service;
+    Button btn2;
+    TracksService service;
+    int j = 0;
+    private RecyclerView recyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager layoutManager;
+    List<Track> tracks;
+    List<String> tracksConId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.output2), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        input = findViewById(R.id.input);
+        recyclerView = (RecyclerView) findViewById(R.id.recycler);
+        recyclerView.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setHasFixedSize(true);
+        j = 1;
         output = findViewById(R.id.output);
         btn = findViewById(R.id.btn1);
         btn.setOnClickListener(this);
+        btn2 = findViewById(R.id.pon);
+        btn2.setOnClickListener(this);
+
+
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://api.github.com/")
+                .baseUrl("http://10.0.2.2:8080/dsaApp/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        service = retrofit.create(GitHubService.class);
-    }
+        service = retrofit.create(TracksService.class);
 
+        MuestraCanciones();
+    }
     @Override
     public void onClick(View V) {
-        String user = input.getText().toString();
-        Call<List<Repo>> call = service.listRepos(user);
-        call.enqueue(new Callback<List<Repo>>() {
+        if(V.getId() == R.id.btn1)
+            MuestraCanciones();
+        else if(V.getId() == R.id.pon)
+        {
+            Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+            intent.putStringArrayListExtra("TracksConId", (ArrayList<String>) tracksConId);
+            startActivity(intent);
+        }
+    }
+    public void MuestraCanciones(){
+        Call<List<Track>> call = service.listTracks();
+        call.enqueue(new Callback<List<Track>>() {
             @Override
-            public void onResponse(Call<List<Repo>> call, Response<List<Repo>> response) {
-                if (response.isSuccessful() && response.body() != null) {
-                    List<Repo> repos = response.body();
-                    PrintInfo(repos);
-                } else {
+            public void onResponse(Call<List<Track>> call, Response<List<Track>> response) {
+                if (response.isSuccessful() && response.body() != null)
+                {
+                    tracks = response.body();
+                    List<String> inputTitle = new ArrayList<>();
+                    List<String> inputAuthor = new ArrayList<>();
+                    inputTitle = getListTitle(tracks);
+                    inputAuthor = getListSinger(tracks);
+                    tracksConId = getListConId(tracks);
+                    mAdapter = new MyAdapter(inputTitle, inputAuthor);
+                    recyclerView.setAdapter(mAdapter);
+                }
+                else
+                {
                     output.setText("ERROR en la API");
                 }
             }
-
             @Override
-            public void onFailure(Call<List<Repo>> call, Throwable throwable) {
-                output.setText("error en la API");
+            public void onFailure(Call<List<Track>> call, Throwable throwable) {
+                String text = call.toString();
+                output.setText(call.toString());
+                j = j+1;
             }
         });
     }
 
-    public void PrintInfo(List<Repo> repos)
+    public List<String> getListTitle(List<Track> tracks)
     {
-        String respuesta = "";
-        for (Repo repo:repos)
+        List<String> respuesta = new ArrayList<>();
+        for (Track track:tracks)
         {
-            respuesta = respuesta + "The username: " + repo.name + " has a project with description: " +repo.description + " an a total of: " + repo.stargazers_count + "\n";
+            String title = track.title;
+            respuesta.add(title);
         }
-        output.setText(respuesta);
+        return respuesta;
+    }
+    public List<String> getListSinger(List<Track> tracks)
+    {
+        List<String> respuesta = new ArrayList<>();
+        for (Track track:tracks)
+        {
+            String singer = track.singer;
+            respuesta.add(singer);
+        }
+        return respuesta;
+    }
+    public List<String> getListConId(List<Track> tracks)
+    {
+        List<String> respuesta = new ArrayList<>();
+        for (Track track:tracks)
+        {
+            String title = track.title;
+            String singer = track.singer;
+            String id = track.id;
+            respuesta.add(id);
+            respuesta.add(singer);
+            respuesta.add(title);
+        }
+        return respuesta;
     }
 }
